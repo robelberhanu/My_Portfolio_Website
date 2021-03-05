@@ -7,7 +7,8 @@
     --primary-grey: #ccd1d9;
     --primary-dark-grey: #666666;
     --primary-hover-orange: #f9ab00;
-    --primary-light-grey : #f4f4f4
+    --primary-light-grey : #f4f4f4;
+    --primary-black : #000000;
 }
 
 body {
@@ -281,7 +282,7 @@ background: var(--primary-light-grey);
     height: 1rem;
     border-radius: 50%;      
     border: 0.3125rem solid var(--primary-dark);
-    background: var(--primary-orange);
+    background: var(--primary-red);
     margin-top: 0.625rem;
     z-index: 3;
 }
@@ -295,6 +296,111 @@ background: var(--primary-light-grey);
 
 .timeline-content h3{
     margin-top: 0.3125rem;
-    color: var(--primary-orange);
+    color: var(--primary-red);
     font-weight: 900;
+}
+
+
+/*---------------------------Portfolio ----------------------*/
+
+.portfolio-wrapper{
+    background: var(--primary-light-grey);
+    padding: 2rem 0;
+}
+
+.portfolio-wrapper h1{
+    color: var(--primary-red);
+}
+
+.portfolio-image{
+    width: 15rem;
+    border: 1px solid var(--primary-red);
+    padding: 0 0.08rem;
+}
+
+.portfolio-image-box{
+    position: relative;
+    margin: 0.8rem;
+}
+
+/*---------------------------Overflow ----------------------*/
+
+.overflow{
+    position: absolute;
+    opacity: 0;
+    background: var(--primary-black);
+    width: 15rem;
+    height: 11rem;
+    top: 0;
+    border: 1px solid var(--primary-red);
+    cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow{
+    opacity: 60%;
+    transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon{
+    position: absolute;
+    opacity: 1;
+    margin-left: -8rem;
+    margin-top: 4.5rem;
+    color: var(--primary-red);
+    font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfoilo-icon{
+    opacity: 70%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/*---------------------------Pop Up Portfolio ----------------------*/
+
+
+.portfolio-image-popupbox{
+    width: 45rem;
+    padding: 0 0.5rem;
+}
+
+.hyper-link{
+    cursor: pointer;
+    color: var(--primary-red);
+
+}
+
+.hyper-link:hover{
+    color: var(--primary-orange);
+    
+}
+
+/*---------------------------Media ----------------------*/
+
+@media(max-width: 768px){
+    .portfolio-image-popupbox{
+        width: 100%;
+    }
+}
+
+@media(max-height: 570px){
+
+    .popupbox-wrapper{
+        height: 100%;
+    }
+
+    .portfolio-image-popupbox{
+        width: 50%;
+    }
+}
+
+@media(max-height: 280px){
+
+    .popupbox-wrapper{
+        height: 90%;
+    }
+
+    .portfolio-image-popupbox{
+        width: 30%;
+    }
 }
