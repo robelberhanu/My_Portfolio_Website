@@ -5,8 +5,8 @@ import Header from "./components/Header"
 import Particles from "react-particles-js"
 import About from "./components/About"
 import Services from "./components/Services"
-import Experience from "./components/Experience"
 import { Portfolio } from './components/Portfolio';
+import { Testimonials } from './components/Testimonials';
 
 function App() {
   return (
@@ -36,8 +36,8 @@ function App() {
       <Header />
       <About />
       <Services/>
-      <Experience/>
       <Portfolio/>
+      <Testimonials/>
     </>
   );
 }

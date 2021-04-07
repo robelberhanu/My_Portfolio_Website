@@ -1,8 +1,8 @@
 import React from "react";
-import loanshark from "../avatars/loan_shark.png";
-import gant from "../avatars/gant.png";
-import profile from "../avatars/Profile.png";
-import wits from "../avatars/witsS.png";
+import loanshark from "../images/loan_shark.png";
+import gant from "../images/gant.png";
+import profile from "../images/Profile.png";
+import wits from "../images/witsS.png";
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
